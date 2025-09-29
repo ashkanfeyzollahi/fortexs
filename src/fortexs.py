@@ -54,7 +54,7 @@ def fortex_scrape_one(page: int) -> list[dict[str, bool | int | None | str]]:
     products: list[dict[str, bool | int | None | str]] = []
 
     url = f"https://www.fortex.ir/search?search=%20&description=true&page={page}"
-    response = requests.get(url, timeout=10)
+    response = http.get(url, timeout=10)
 
     selector = Selector(text=response.text)
 
