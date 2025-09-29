@@ -46,4 +46,8 @@ This will create a virtual environment and install the needed packages.
 poetry run python src/fortexs.py
 ```
 
-You should see a progress bar and after fetching all products you should see a message `Done!`.
+You should see a progress bar as the scraper fetches products. Once complete, you’ll see:
+
+```plain
+Done!
+```
